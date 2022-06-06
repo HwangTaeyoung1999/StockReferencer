@@ -75,3 +75,5 @@ recordRoutes.route("/:id").delete((req, response) => {
 });
  
 module.exports = recordRoutes;
+
+// Make sure to watch elli's video on express from node class
