@@ -1,0 +1,155 @@
+
+
+#about{
+    position: absolute;
+    width: 108px;
+    height: 41px;
+    left: 412px;
+    top: 36px;
+
+    font-family: 'Helvetica Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+
+    color: #000000;
+}
+
+#news{
+    position: absolute;
+    width: 161px;
+    height: 42px;
+    left: 578px;
+    top: 35px;
+
+    font-family: 'Helvetica Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+
+    color: #000000;
+}
+
+#forums{
+    position: absolute;
+    width: 132px;
+    height: 42px;
+    left: 797px;
+    top: 35px;
+
+    font-family: 'Helvetica Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #000000;
+}
+
+#more{
+    position: absolute;
+    width: 95px;
+    height: 42px;
+    left: 1012px;
+    top: 35px;
+
+    font-family: 'Helvetica Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #000000;
+}
+
+#navbar_login{
+    position: absolute;
+    width: 72px;
+    height: 71px;
+    left: 1400px;
+    top: 35px;
+}
+
+
+#monitor{
+    position: absolute;
+    width: 50%;
+    height: 396px;
+    left: 269px;
+    right: 269px;
+    top: 150px;
+    padding: 10px;
+    margin: auto;
+
+    background: rgba(255, 255, 255, 0.57);
+    border: 7px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 90px;
+}
+
+#holder{
+    position: absolute;
+    width: 66px;
+    height: 41px;
+    left: 48%;
+    right: 0px;
+    top: 575px;
+    
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border: 7px solid #000000; 
+}
+
+#console{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 558px;
+    height: 94px;
+    left: 31.9%;
+    top: 623px;
+
+    background: rgba(255, 255, 255, 0.23);
+    border: 7px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 90px;
+}
+
+#mouse{
+    position: absolute;
+    width: 29px;
+    height: 54px;
+    left: 1107px;
+    top: 711px;
+
+    background: #FFFFFF;
+    border: 7px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#link{
+    position: absolute;
+    width: 312px;
+    height: 38px;
+    left: 640px;
+    top: 750px;
+
+    font-family: 'Helvetica Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 39px;
+
+    color: #000000;
+}
+
+.footer{
+   
+    
+}
+
+
+
