@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>StockRef</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <nav class="navbar">
+        <div id="navbar_logo"> 
+            <img src="assets/StockRef (1) (1).png" alt="Logo" width="200" height="150">
+    
+
+        </div>
+        
+        <div class="navbar_menu">
+            <div id="about">About</div>
+            <div id="news">News</div>
+            <div id="forums">Forums</div>
+            <div id="more">More</div>
+
+        <div id="navbar_login">
+            <img src="assets/iconmonstr-user-6-240.png" alt="Login" width="72" height="71">
+        </div>   
+
+
+    </nav>
+
+    <section class="content">
+        <canvas id="monitor">
+            <p>
+                data: <span id="data"></span>
+            </p>
+            <script>
+                const news_api = 'https://newsapi.org/v2/everything?q=Apple&from=2022-07-29&sortBy=popularity&apiKey=2de0f9b05b0b49f990cc46f7dd0546b6';
+                async function getNews() {
+                    const response = await fetch(news_api);
+                    const data = await response.json();
+                    console.log(data);
+
+                    document.getElementById('data').textContent = data;
+                }
+
+                    getNews();
+            </script> 
+        </canvas>
+        <div id="holder"></div>
+        <div id="console"></div>
+        <div id="mouse"></div>
+        <a href="https://www.alphavantage.co/" id="link" target="blank">Don't have a key yet?</a>
+
+
+    </section>
+
+    
+    <footer class="footer">
+        <div class="information"></div>
+
+
+
+    </footer>
+    
+</body>
+</html>
