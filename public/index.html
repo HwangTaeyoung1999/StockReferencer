@@ -29,23 +29,7 @@
     </nav>
 
     <section class="content">
-        <canvas id="monitor">
-            <p>
-                data: <span id="data"></span>
-            </p>
-            <script>
-                const news_api = 'https://newsapi.org/v2/everything?q=Apple&from=2022-07-29&sortBy=popularity&apiKey=2de0f9b05b0b49f990cc46f7dd0546b6';
-                async function getNews() {
-                    const response = await fetch(news_api);
-                    const data = await response.json();
-                    console.log(data);
-
-                    document.getElementById('data').textContent = data;
-                }
-
-                    getNews();
-            </script> 
-        </canvas>
+        <canvas id="monitor"> </canvas>
         <div id="holder"></div>
         <div id="console"></div>
         <div id="mouse"></div>
@@ -61,6 +45,14 @@
 
 
     </footer>
+    <script>// Fetching News Api for the monitor
+        fetch('https://saurav.tech/NewsAPI/top-headlines/category/business/in.json')
+            .then(res => res.json())
+            .then((data) => {
+                console.log(data);
+            })
+            .catch(err => console.error(err));
+    </script>
     
 </body>
 </html>

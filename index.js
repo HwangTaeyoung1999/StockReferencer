@@ -22,13 +22,14 @@ app.listen(port, () => {
 //Serving static files
 app.use(express.static('public'));
 
-//Calling the News api
+//Calling the News api with axios
+axios.get('https://newsapi.org/v2/everything?q=stock&apiKey=2de0f9b05b0b49f990cc46f7dd0546b6')
+  .then(result => {
+      console.log(result.data);
+  })
+  .catch(error => {
+      console.log(error);
+  });
 
-const res = async () => {
-  try {
-    return await axios.get('https://newsapi.org/v2/everything?q=Apple&from=2022-07-29&sortBy=popularity&apiKey=2de0f9b05b0b49f990cc46f7dd0546b6')
-  } catch (error) {
-    console.error(error)
-  }
-}
+
 
